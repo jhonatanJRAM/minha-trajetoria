@@ -1,0 +1,48 @@
+    operations = input('''
+escolha o tipo de operação:
+(1)addition
+(2)subtraction
+(3)multiplication
+(4)division
+''')
+    
+    n1 = int(input('digite o primeiro numero:\n'))
+    n2 = int(input('digite o segundo numero:\n'))
+
+    #addition
+    if operations == '1':
+        print(f'{n1} + {n2} = {n1 + n2}')
+        
+    #subtraction
+    elif operations == '2':
+        print(f'{n1} - {n2} = {n1 - n2}')
+        
+    #multiplication
+    elif operations == '3':
+        print(f'{n1} * {n2} = {n1 * n2}')
+        
+    #division
+    elif operations == '4':
+        print(f'{n1} / {n2} = {n1 / n2}')
+        
+    else:
+        print('operação invalida tente novamente!')
+        calculate()
+
+    again()
+        
+def again():
+    calc_again = input('''
+você gostaria de calcular novamente?
+digite S para sim ou N para não.
+''')
+    
+    if calc_again.upper() == 'S':
+        calculate()
+        
+    elif calc_again.upper() == 'N':
+        print('até mais.')
+        
+    else:
+        again()
+calculate()
