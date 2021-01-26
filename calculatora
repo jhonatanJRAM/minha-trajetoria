@@ -1,0 +1,46 @@
+def calcular():
+  operação = input('''
+  escolha a operação desejada:
+    (1) - adição
+    (2) - subtração
+    (3) - multiplicação
+    (4) - divisão 
+  ''')
+
+n1 = int(input('digite um numero:\n'))
+n2 = int(input('digite outro numero:\n'))
+
+  if operação = '1':
+    print(f'{n1} + {n2} = {n1 + n2}')
+    
+  elif operação = '2':
+    print(f'{n1} - {n2} = {n1 - n2}')
+  
+  elif operação = '3':
+    print(f'{n1} * {n2} = {n1 * n2}')
+   
+  elif operação = '4':
+    print(f'{n1} / {n2} = {n1 / n2}')
+    
+  else:
+    print('operação invalida tente novamente.')
+    
+    novamente()
+    
+def novamente():
+  
+  calc_novamente = input('''
+    deseja fazer outra operação?
+    digite S para sim e N para não:
+  ''')
+  
+  if calc_novamente.upper() = 'S':
+    calcular()
+    
+  elif calc_novamente.upper() = 'N':
+    print('até a proxima!')
+    
+  else:
+    novamente()
+calcular()
+    
